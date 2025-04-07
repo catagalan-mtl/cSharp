@@ -1,0 +1,15 @@
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/HelloMars/bin/Debug/net9.0/HelloMars
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/HelloMars/bin/Debug/net9.0/HelloMars.deps.json
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/HelloMars/bin/Debug/net9.0/HelloMars.runtimeconfig.json
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/HelloMars/bin/Debug/net9.0/HelloMars.dll
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/HelloMars/bin/Debug/net9.0/HelloMars.pdb
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/HelloMars/obj/Debug/net9.0/HelloMars.GeneratedMSBuildEditorConfig.editorconfig
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/HelloMars/obj/Debug/net9.0/HelloMars.AssemblyInfoInputs.cache
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/HelloMars/obj/Debug/net9.0/HelloMars.AssemblyInfo.cs
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/HelloMars/obj/Debug/net9.0/HelloMars.csproj.CoreCompileInputs.cache
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/HelloMars/obj/Debug/net9.0/HelloMars.sourcelink.json
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/HelloMars/obj/Debug/net9.0/HelloMars.dll
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/HelloMars/obj/Debug/net9.0/refint/HelloMars.dll
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/HelloMars/obj/Debug/net9.0/HelloMars.pdb
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/HelloMars/obj/Debug/net9.0/HelloMars.genruntimeconfig.cache
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/HelloMars/obj/Debug/net9.0/ref/HelloMars.dll

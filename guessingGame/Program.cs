@@ -1,18 +1,39 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Net.Quic;
+
 Random random = new Random();
 int answer = random.Next(1, 100);
 
 Console.WriteLine("Hello, welcome to the Guessing Game! (shhhhhhhh): " + answer);
 Console.Write("Enter a number from 1 to 100: > ");
-byte choice;
+byte attempts = 0;
+GuessingGame(attempts, answer);
 
-while ((!Byte.TryParse(Console.ReadLine(), out choice)) || (choice > 100))
+static void GuessingGame(byte attempts, int answer)
 {
-  Console.Write("Wrong Input! Please tri again: > ");
-}
+  var input = Console.ReadLine();
+  attempts++;
 
-while (choice != answer)
-{
+  if (!Byte.TryParse(input, out byte choice))
+  {
+    Console.Write("Wrong Input! Please tri again: > ");
+    GuessingGame(attempts, answer);
+  }
 
+  Byte.TryParse(input, out choice);
+  while (choice != answer)
+  {
+    if (choice > answer)
+    {
+      Console.Write("too high... ");
+    }
+    else
+    {
+      Console.Write("too low... ");
+    }
+    Console.Write("Sorry, try again! > ");
+    GuessingGame(attempts, answer);
+  }
+  Console.WriteLine("YOU WIN!!!!!!! it only took you " + attempts + " attempts! hahaha");
+  Environment.Exit(0);
 }
-Console.WriteLine("YOU WIN!!!!!!! hahaha");

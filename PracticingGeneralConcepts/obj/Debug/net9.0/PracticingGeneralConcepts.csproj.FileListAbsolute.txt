@@ -1,0 +1,15 @@
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/PracticingGeneralConcepts/obj/Debug/net9.0/PracticingGeneralConcepts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/PracticingGeneralConcepts/obj/Debug/net9.0/PracticingGeneralConcepts.AssemblyInfoInputs.cache
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/PracticingGeneralConcepts/obj/Debug/net9.0/PracticingGeneralConcepts.AssemblyInfo.cs
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/PracticingGeneralConcepts/obj/Debug/net9.0/PracticingGeneralConcepts.csproj.CoreCompileInputs.cache
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/PracticingGeneralConcepts/obj/Debug/net9.0/PracticingGeneralConcepts.sourcelink.json
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/PracticingGeneralConcepts/bin/Debug/net9.0/PracticingGeneralConcepts
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/PracticingGeneralConcepts/bin/Debug/net9.0/PracticingGeneralConcepts.deps.json
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/PracticingGeneralConcepts/bin/Debug/net9.0/PracticingGeneralConcepts.runtimeconfig.json
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/PracticingGeneralConcepts/bin/Debug/net9.0/PracticingGeneralConcepts.dll
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/PracticingGeneralConcepts/bin/Debug/net9.0/PracticingGeneralConcepts.pdb
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/PracticingGeneralConcepts/obj/Debug/net9.0/PracticingGeneralConcepts.dll
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/PracticingGeneralConcepts/obj/Debug/net9.0/refint/PracticingGeneralConcepts.dll
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/PracticingGeneralConcepts/obj/Debug/net9.0/PracticingGeneralConcepts.pdb
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/PracticingGeneralConcepts/obj/Debug/net9.0/PracticingGeneralConcepts.genruntimeconfig.cache
+/Users/catalinagalan/CODE/catagalan-mtl/cSharp/PracticingGeneralConcepts/obj/Debug/net9.0/ref/PracticingGeneralConcepts.dll

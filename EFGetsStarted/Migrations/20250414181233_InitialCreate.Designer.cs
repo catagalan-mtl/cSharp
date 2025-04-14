@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EFGetsStarted.Migrations
 {
     [DbContext(typeof(BloggingContext))]
-    [Migration("20250411210210_InitialCrate")]
-    partial class InitialCrate
+    [Migration("20250414181233_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

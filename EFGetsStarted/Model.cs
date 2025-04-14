@@ -12,9 +12,7 @@ public class BloggingContext : DbContext
 
   public BloggingContext()
   {
-    var folder = Environment.SpecialFolder.LocalApplicationData;
-    var path = Environment.GetFolderPath(folder);
-    DbPath = System.IO.Path.Join(path, "blogging.db");
+    DbPath = "./blogging.db";
   }
 
   // The following configures EF to create SQLite db file in the special "local"

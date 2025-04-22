@@ -5,7 +5,7 @@ namespace TradingAppC.service;
 
 public class QuoteService
 {
-  public Quote CreateQuoteObject(AlphaQuote? alphaQuote)
+  public Quote? CreateQuoteObject(AlphaQuote? alphaQuote)
   {
     if (alphaQuote is not null)
     {

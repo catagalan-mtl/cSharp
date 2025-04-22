@@ -25,14 +25,18 @@ public class MarketDataHttpHelper
     try
     {
       var responseBody = JsonNode.Parse(jsonAlphaQuote);
-      Console.WriteLine(responseBody);
-      var alphaQuote = JsonSerializer.Deserialize<AlphaQuote>(responseBody["Global Quote"]);
-      return alphaQuote;
+      if (responseBody is not null)
+      {
+        var alphaQuote = JsonSerializer.Deserialize<AlphaQuote>(responseBody["Global Quote"]);
+        return alphaQuote;
+      }
     }
     catch (System.Exception e)
     {
       throw new Exception(e.Message);
     }
+
+    return null;
   }
 
   public async Task<string> GetJsonAlphaQuote()

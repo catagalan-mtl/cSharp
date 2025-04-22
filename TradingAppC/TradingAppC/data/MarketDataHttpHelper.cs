@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using TradingAppC.model;
 
@@ -23,16 +24,15 @@ public class MarketDataHttpHelper
     string jsonAlphaQuote = await GetJsonAlphaQuote();
     try
     {
-      var alphaQuote = JsonSerializer.Deserialize<AlphaQuote>(jsonAlphaQuote);
+      var responseBody = JsonNode.Parse(jsonAlphaQuote);
+      Console.WriteLine(responseBody);
+      var alphaQuote = JsonSerializer.Deserialize<AlphaQuote>(responseBody["Global Quote"]);
       return alphaQuote;
     }
     catch (System.Exception e)
     {
-      // Console.WriteLine("Unable to deserialize responseBody to AlphaQuote. Exception caught:");
-      // Console.WriteLine(e.Message);
       throw new Exception(e.Message);
     }
-    return null;
   }
 
   public async Task<string> GetJsonAlphaQuote()

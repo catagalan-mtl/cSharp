@@ -1,3 +1,7 @@
+using System.Text.Json;
+using System.Threading.Tasks;
+using TradingAppC.model;
+
 namespace TradingAppC.data;
 
 public class MarketDataHttpHelper
@@ -14,22 +18,41 @@ public class MarketDataHttpHelper
     _url = UrlBuilderHelper(_symbol, _apiKey);
   }
 
+  public async Task<AlphaQuote?> CreateAlphaQuote()
+  {
+    string jsonAlphaQuote = await GetJsonAlphaQuote();
+    try
+    {
+      var alphaQuote = JsonSerializer.Deserialize<AlphaQuote>(jsonAlphaQuote);
+      return alphaQuote;
+    }
+    catch (System.Exception e)
+    {
+      // Console.WriteLine("Unable to deserialize responseBody to AlphaQuote. Exception caught:");
+      // Console.WriteLine(e.Message);
+      throw new Exception(e.Message);
+    }
+    return null;
+  }
 
-
-  // public AlphaQuote ALphaQuoteString()
-  // {
-  //   AlphaQuote alphaQuote = new AlphaQuote();
-  //   string json = GetJsonAlphaQuote(url);
-  //   return alphaQuote;
-  // }
   public async Task<string> GetJsonAlphaQuote()
   {
     HttpClient client = new HttpClient();
     client.DefaultRequestHeaders.Accept.Clear();
 
-    var response = await client.GetAsync(_url);
-    string json = await response.Content.ReadAsStringAsync();
-    return json;
+    try
+    {
+      var response = await client.GetAsync(_url);
+      response.EnsureSuccessStatusCode();
+      string responseBody = await response.Content.ReadAsStringAsync();
+      return responseBody;
+    }
+    catch (HttpRequestException e)
+    {
+      Console.WriteLine("\nException Caught:");
+      Console.WriteLine(e.Message);
+    }
+    return "";
   }
 
   private static string UrlBuilderHelper(string symbol, string apiKey)
